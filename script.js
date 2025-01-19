@@ -111,28 +111,4 @@ videoForm.addEventListener('submit', (event) => {
 });
 
 
-var video = videoPlayer;
-var lastClickTime = 0;
-  
-  video.addEventListener('keydown', function(e) {
-    //if (e.repeat || video.seeking) return; // ignore repeated key presses and seeking
-    if (e.code === 'ArrowRight') { // right arrow key
-      video.currentTime -= 45;
-    } else if (e.code === 'ArrowLeft') { // left arrow key
-      video.currentTime += 45;
-      
-    }
-  }); 
-  
-  video.addEventListener('dblclick', function(e) {
-    var x = e.clientX;
-    var currentTime = video.currentTime;
-    //if (Math.abs(e.timeStamp - lastClickTime) < 500 || video.seeking) return; // ignore rapid clicks and seeking
-    lastClickTime = e.timeStamp;
-    if (x < video.offsetWidth / 2) {
-      video.currentTime -= 5; // double click on left side of video
-    } else {
-      video.currentTime += 5; // double click on right side of video
-    }
-  });
 
