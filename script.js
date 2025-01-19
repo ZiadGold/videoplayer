@@ -1,6 +1,6 @@
 const videoForm = document.getElementById('video-form');
 var videoLink = document.getElementById('video-link');
-var videoPlayer = document.getElementById('video-player');
+var videoPlayer = document.getElementById('plyr');
 const recentSelectionsList = document.getElementById('recent-selections');
 const clearAllBtn = document.getElementById('clearAllBtn');
 
@@ -56,7 +56,7 @@ if (1 == 1) {
     videoLink = document.getElementById('video-link');
     var link = videoLink.value;
     if (link == null || link == "") {
-      videoPlayer = document.getElementById('video-player');
+      videoPlayer = document.getElementById('plyr');
       link = videoPlayer.src
     }
     //console.log(`${videoPlayer.currentTime} | ${link}`)
