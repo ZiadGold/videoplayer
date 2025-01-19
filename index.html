@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Video Player</h1>
+      <form id="video-form">
+        <label for="video-link">Enter Video Link:</label>
+        <input type="text" id="video-link" required>
+        <button type="submit">Play</button>
+      </form>
+      <div id="video-container">
+        <video controls id="video-player"></video>
+      </div>
+    </div>
+    <h2>Recent Selections</h2>
+    <ul id="recent-selections"></ul>
+    <button id="clearAllBtn">Clear All Selections</button>
+    <script src="script.js"></script>
+  </body>
+</html>
