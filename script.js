@@ -45,7 +45,7 @@ function displayRecentSelections() {
 }
 
 clearAllBtn.addEventListener('click', () => {
-  localStorage.clear();
+  localStorage.removeItem("recentSelections");
   recentSelections = [];
   displayRecentSelections();
 });
