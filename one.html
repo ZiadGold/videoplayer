@@ -5,7 +5,17 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css" />
   </head>
   <body>
-    <video
+    
+    <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}</style>
+    <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+    <script>
+      const player = new Plyr('#plyr');
+    </script>
+<video
         id="plyr"
         poster="https://occ-0-8407-1361.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABcX-woMfv9-gFJ4EN_L5-MyeEQU3vRfxslp6TWwMwtstO3QVxJ5fV4Hhc_MEt1XUBnZdAMqfzmERRteLsfHI4XMrXqCkO1doK3UsPWKr0HjTOpNzWZa-i_Md.jpg?r=994"
       >
@@ -21,14 +31,5 @@
           size="720"
         />
     </video>
-    <style>* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}</style>
-    <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
-    <script>
-      const player = new Plyr('#plyr');
-    </script>
   </body>
 </html>
