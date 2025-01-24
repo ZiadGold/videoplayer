@@ -1,0 +1,35 @@
+#six {
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    appearance: none;
+    font: inherit;
+    opacity: 1;
+    text-decoration: none;
+    align-items: center;
+    border: 1px solid dimgray;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-size: 13px;
+    font-weight: 400;
+    justify-content: center;
+    letter-spacing: normal;
+    line-height: 1;
+    padding: 2px 7px;
+    user-select: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    fill: currentcolor;
+    position: relative;
+    transition-duration: 250ms;
+    transition-property: background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
+    vertical-align: text-top;
+    border-style: solid;
+    border-width: 0.0625rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255, 0);
+    border-color: rgba(0, 0, 0, 0);
+    margin: 1rem 0px;
+}
