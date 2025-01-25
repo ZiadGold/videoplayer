@@ -1,4 +1,6 @@
-function addModalOne() {
+function addModalOne(element) {
+            var id = element.id
+            
             // The giant chunk of HTML as a string
             var modalHTML = `
             
@@ -16,22 +18,7 @@ function addModalOne() {
                         </button>
                     </div>
                     
-                                            <video
-        id="plyr"
-        poster="https://occ-0-8407-1361.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABcX-woMfv9-gFJ4EN_L5-MyeEQU3vRfxslp6TWwMwtstO3QVxJ5fV4Hhc_MEt1XUBnZdAMqfzmERRteLsfHI4XMrXqCkO1doK3UsPWKr0HjTOpNzWZa-i_Md.jpg?r=994"
-      >
-
-<source
-          src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-480p.mp4"
-          type="video/mp4"
-          size="480"
-        />
-        <source
-          src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
-          type="video/mp4"
-          size="720"
-        />
-    </video>
+                                           <iframe src="${id}.html" title="W3Schools Free Online Web Tutorials"></iframe>
                 </div>
                             
                 </div>
@@ -40,28 +27,12 @@ function addModalOne() {
             </style>
             `;
 
-             modalHTML = `<video
-        id="plyr"
-        poster="https://occ-0-8407-1361.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABcX-woMfv9-gFJ4EN_L5-MyeEQU3vRfxslp6TWwMwtstO3QVxJ5fV4Hhc_MEt1XUBnZdAMqfzmERRteLsfHI4XMrXqCkO1doK3UsPWKr0HjTOpNzWZa-i_Md.jpg?r=994"
-      >
 
-<source
-          src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-480p.mp4"
-          type="video/mp4"
-          size="480"
-        />
-        <source
-          src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
-          type="video/mp4"
-          size="720"
-        />
-    </video><script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
-    <script>
-      const player = new Plyr('#plyr');
-    </script>`
 
             // Adding the modal to the body
             document.body.insertAdjacentHTML("beforeend", modalHTML);
+            // Adding the modal to the body
+
         }
 
         function closeModalOne() {

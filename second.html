@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Player</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css" />
+  </head>
+  <body>
+    <video
+        id="plyr"
+        poster="https://simkl.in/episodes/16/16830703c49651d8a6_w.webp"
+      >
+
+<source
+          src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+          type="video/mp4"
+          size="480"
+        />
+        <source
+          src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
+          type="video/mp4"
+          size="720"
+        />
+    </video>
+   
+    <script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+    <script>
+      const player = new Plyr('#plyr');
+    </script>
+    <link rel="stylesheet" href="plyr.css">
+ <style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  
+}
+.plyr {
+  height: 100vh;
+}
+
+.plyr__control--overlaid {
+  background: transparent;
+}
+.plyr__control--overlaid:hover {
+  background: red;
+}
+.plyr__control svg {
+  -webkit-font-smoothing: antialiased;
+  direction: ltr;
+  cursor: pointer;
+  color: var(--plyr-video-control-color,#fff);
+  font: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  display: block;
+  fill: currentColor;
+  height: var(--plyr-control-icon-size,25px);
+  pointer-events: none;
+  width: var(--plyr-control-icon-size,25px);
+  left: 2px;
+  position: relative;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+    background: transparent;
+    background: var(--plyr-video-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, transparent)));
+    color: #fff;
+    color: var(--plyr-video-control-color-hover, #fff);
+}
+
+.plyr__menu__container {
+  -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    font-family: var(--plyr-font-family,inherit);
+    font-variant-numeric: tabular-nums;
+    font-weight: var(--plyr-font-weight-regular,400);
+    line-height: var(--plyr-line-height,1.7);
+    text-shadow: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    animation: plyr-popup .2s ease;
+    background: #282828;
+    border-radius: 4px;
+    bottom: 100%;
+    box-shadow: var(--plyr-menu-shadow,0 1px 2px rgba(0,0,0,.15));
+    color: var(--plyr-menu-color,#4a5464);
+    font-size: var(--plyr-font-size-base,15px);
+    margin-bottom: 10px;
+    position: absolute;
+    right: -3px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+
+}
+
+.plyr__menu__container .plyr__control {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(210, 210, 210);
+
+}
+
+</style>
+
+  </body>
+</html>
